@@ -1,12 +1,12 @@
-//  using + operator
-const message1 = 'This is a long message\n' + 
-'that spans across multiple lines\n' + 
-'in the code.'
+function demo(...args)
+{
+    console.log(args);
 
-console.log(message1);
+    console.log(args[0]);
+    console.log(args[1]);
+    console.log(args[2]);
+    console.log(typeof(args));
+}
 
-let a = `Hello
-How Are You?
-Thanks`;
-
-console.log(a);
+demo(15,25,45);
+// console.log(typeof(args));

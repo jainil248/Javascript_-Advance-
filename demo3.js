@@ -1,6 +1,10 @@
-var a = 10;
+function demo(...args)
+{
+    for (var i=0; i<args.length; i++) 
+    {
+	    console.log(args[i]);
+    }
+}
 
-console.log("A Value is \n" + a);
+demo(10,20,30,40,50);
 
-console.log(`A value is 
-${a}`);
